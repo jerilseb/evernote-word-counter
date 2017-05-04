@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Evernote word counter",
+  "description": "Shows the word count on Evernote Web",
+  "version": "1.0.0",
+  "permissions": ["activeTab"],
+  "icons": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.evernote.com/Home.action*"],
+      "js": ["calculateStats.js", "ew.js"],
+      "css": ["ew.css"]
+    }
+  ]
+}
+

@@ -1,0 +1,11 @@
+
+[data-ew-stats]::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    opacity: 0.5;
+    font-size: 90%;
+
+    content: attr(data-ew-stats);
+}
